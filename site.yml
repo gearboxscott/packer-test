@@ -1,0 +1,11 @@
+---
+# site.yml for packer-test
+
+- name: Project packer-test
+  hosts: all
+  gather_facts: no
+
+  tasks:
+  - name: print stuff
+    debug:
+      msg: '{{ inventory_hostname }}'
